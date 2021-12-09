@@ -1,0 +1,210 @@
+doctype html
+html(lang="en")
+    head
+        //- META LANGUAGE
+        meta(charset="UTF-8") 
+        //- META DEALING WITH BROWSERS
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        //- META SCREEN
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //-ICON TAB
+        link(rel="icon", href="assets/images/icon.png")
+        //-TITLE PAGE
+        title Coffee lover
+        //- CSS FILE
+        link(rel="stylesheet", href="assets/css/main.css")
+    body 
+        //- HEADER
+        header 
+            nav
+                .container
+                    .navbar.reset-flex
+                        a.logo(href="") 
+                            i.fas.fa-mug-hot.cup
+                            |coffee lover
+                        ul.list.reset-flex
+                            li.item
+                                a.item-link(href="#landing") home
+                            li.item
+                                a.item-link(href="#about-us") about
+                            li.item
+                                a.item-link(href="#products") coffee
+                            li.item
+                                a.item-link(href="#our-clients") reviews
+                            li.item
+                                a.item-link(href="#contact") contact us
+                            li.item 
+                                a.acount(href="")
+                                    i.fas.fa-user-alt
+                                a.shopping(href="") 
+                                    i.fas.fa-shopping-bag
+                        .toggle-bar
+            section.landing#landing 
+                .star1 
+                .star2
+                .container 
+                    .content
+                        h1 
+                            |start your day 
+                            br
+                            |with our coffee
+                        .order
+                            button order 
+                        .social 
+                            span 
+                                i.fab.fa-facebook-f
+                            span 
+                                i.fab.fa-twitter
+                            span
+                                i.fab.fa-instagram
+        
+        //- ABOUT US SECTION
+        section.about-us#about-us 
+            .video 
+                img(src="assets/images/cup1.jpg", alt="video") 
+            .content 
+
+                h2 about us 
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint sed aperiam officia fugit aliquam itaque maxime? Neque soluta fugiat ratione repellat nemo consequuntur.
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint sed aperiam officia fugit aliquam itaque maxime? Neque soluta fugiat ratione repellat nemo consequuntur
+                .more 
+                    button learn more
+
+        //- OUR PRODUCTS
+        section.products#products
+            h2 our products
+            .container
+                .pro-wrapper.reset-grid-3
+                    .pro-item 
+                        img(src="assets/images/pro-1.jpg", alt="")
+                        h3 product name 
+                        .rate 
+                            i.fas.fa-star 
+                            i.fas.fa-star 
+                            i.fas.fa-star 
+                            i.fas.fa-star 
+                            i.fas.fa-star 
+                        span.price $120
+                        span.buy-it
+                            i.fas.fa-shopping-bag
+                        .clear-fix
+
+                    .pro-item 
+                        img(src="assets/images/pro-3.jpg", alt="")
+                        h3 product name 
+                        .rate 
+                            i.fas.fa-star 
+                            i.fas.fa-star 
+                            i.fas.fa-star 
+                            i.fas.fa-star 
+                            i.fas.fa-star  
+                        span.price $75
+                        span.buy-it
+                            i.fas.fa-shopping-bag
+                        .clear-fix
+
+                    .pro-item 
+                        img(src="assets/images/pro-2.jpg", alt="")
+                        h3 product name 
+                        .rate 
+                            i.fas.fa-star 
+                            i.fas.fa-star 
+                            i.fas.fa-star 
+                            i.fas.fa-star 
+                            i.fas.fa-star 
+                        span.price $50
+                        span.buy-it
+                            i.fas.fa-shopping-bag
+                        .clear-fix
+
+
+
+        //- OUR CLIENTS
+        section.our-clients#our-clients
+            .wrapper 
+                h2 our clients
+                .container 
+                    .slider 
+                        i.fas.fa-chevron-left
+                        .testi
+                            img(src="assets/images/client1.jpg", alt="")
+                            .content
+                                h4 client name
+                                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa doloribus explicabo quam iste laudantium dolore.
+                        
+                    .next 
+                        -for(var i=0;i<5;i++)
+                                span
+                        
+                        
+        
+
+        //- WHY CHOOSE US
+        section.why-us 
+            h2 why choose us ?
+            .container 
+                .reset-grid-3 
+                    .advantage
+                        i.fas.fa-air-freshener
+                        h4 title of advantage
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat et odit obcaecati quasi excepturi?
+                    .advantage
+                        i.fas.fa-beer
+                        h4 title of advantage
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat et odit obcaecati quasi excepturi?
+                    .advantage
+                        i.fab.fa-bitbucket
+                        h4 title of advantage
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat et odit obcaecati quasi excepturi?
+        
+        //- FOOTER
+        footer#contact 
+            .container
+                h2 be in touch 
+                .reset-grid-3 
+                    .find-us
+                        h3 find us 
+                        label(for="address") address 
+                        address 
+                            i.fas.fa-map-marker-alt
+                            |2130 fulton ST,chicago,
+                            br
+                            |IL 94117-1080 USA
+                        label(for="phone") phone 
+                        p
+                            i.fas.fa-phone 
+                            |++2 0127-502-2135
+                        label(for="social") follow us
+                        p
+                        .social 
+                            i.fab.fa-facebook
+                            i.fab.fa-twitter
+                            i.fab.fa-instagram-square
+                            i.fab.fa-tiktok
+                            
+
+                    .be-partner 
+                        h3 newsletter 
+                        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum sapiente dignissimos, accusantium architecto explicabo obcaecati ab in. Dolor, minima impedit.
+                        label(for="email")  email 
+                        input(type="email" placeholder="your email")
+                        input(type="submit")
+                    .update
+                        h3 from instagram 
+                        .reset-flex  
+                            img(src="assets/images/pro-1.jpg", alt="")
+                            img(src="assets/images/pro-2.jpg", alt="")
+                            img(src="assets/images/pro-3.jpg", alt="")
+                            img(src="assets/images/pro-4.jpg", alt="")
+        
+        //-LAST
+        .last 
+            .container
+                p &copy; 2022 
+                    span coffee 
+                    |made with love by 
+                    span madda
+                p 
+                    img(src="", alt="")
+        script(src="assets/js/main.js")
+        script(src="https://kit.fontawesome.com/02fda1c7e2.js")
